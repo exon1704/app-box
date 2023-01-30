@@ -308,3 +308,7 @@ fabric.properties
 .history/
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node,Angular,Intellij,WebStorm+all,VisualStudioCode
+
+web-app/.vscode/
+
+web-app/package-lock.json
