@@ -7,7 +7,9 @@ import {NotfoundComponent} from "@app-pages/notfound/notfound.component";
     imports: [RouterModule.forRoot([{
         path: '', component: AppLayoutComponent, children: [{
             path: '', loadChildren: () => import("app/module/dashboard/dashboard.module").then(m => m.DashboardModule)
-        },]
+        }, {
+            path: 'reports', loadChildren: () => import("app/module/reports/report.module").then(m => m.ReportModule)
+        }]
     }, {path: 'notfound', component: NotfoundComponent}, {
         path: '**', redirectTo: '/notfound'
     },], {scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'})],
